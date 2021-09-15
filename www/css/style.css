@@ -1,0 +1,75 @@
+*
+{
+  margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+.topo
+{
+  padding-top: 5%;
+  padding-bottom: 3%;
+  background: #aacc00;
+}
+.corpo
+{
+  margin-top: 5%;
+}
+.botao-menu
+{
+  margin-left: 3%;
+  margin-right: 3%; 
+}
+.cor-verde
+{
+  background: #aacc00;
+  color: white;
+}
+.cor-verde-config
+{
+  background: #007f5f;
+  color: white;
+}
+.modal
+{
+  width: 75%;
+}
+.modal-content
+{
+  width: 75%;
+}
+.list-group-item:hover
+{
+  
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: white;
+}
+.list-group-item:hover{
+  background: #aacc00;
+  color: white;
+}
+form .row
+{
+  margin-top: 1%;
+}
+#display
+{
+  color: #2b9348;
+}
+.cadastrar
+{
+  background: #2b9348;
+  color: white;
+  margin-bottom: 10%;
+}
+.cadastrar:hover
+{
+  background: rgb(219, 219, 219);
+  color: #2b9348;
+}
+
