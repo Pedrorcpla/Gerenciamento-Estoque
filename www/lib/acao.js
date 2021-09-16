@@ -13,4 +13,15 @@ function ListaOptionNivel(){
         }
     })
 }
+function readURL(input){
+  if (input.files && input.files[0]){
+    var imagem = new FileReader();
 
+    imagem.onload = function(e){
+      $('#imagem').attr('src', e.target.result);
+      $('#imagem').css('width', '45vh');
+      $('.imgMensagem').remove();
+    }
+    imagem.readAsDataURL(input.files[0]);
+  }
+}

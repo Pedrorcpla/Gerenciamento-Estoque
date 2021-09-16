@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
   <header class="row text-white topo cor-verde">
@@ -48,6 +47,73 @@
 </div>
 <!-- Fim do Menu -->
 
+<div class="row corpo">
+  <div class="col-10 offset-1 border-bottom border-3" align="center">
+    <h3 id="display"">Dados do Produto:</h3>
+  </div>
+</div>
+<br>
+<form id="product" method="POST">
+  <div class="row">
+    <div class="col-10 offset-1 bg-light" align="center">
+      <p class="imgMensagem text-secondary">Nenhuma imagem selecionada...</p>
+      <img id="imagem" class="img-responsive">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-3 offset-1">
+      <label class="form-label">Foto:</label>
+    </div>
+    <div class="col-7">
+      <input type="file" name="foto" id="foto" accept="image/*" onchange = "readURL(this);" class="form-control">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-3 offset-1">
+      <label class="form-label">Nome:</label>
+    </div>
+    <div class="col-7">
+      <input type="text" id="nome" name="nome" class="form-control">
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-3 offset-1">
+      <label class="form-label">Valor:</label>
+    </div>
+    <div class="col-7">
+      <input type="number" id="valor" name="valor" class="form-control">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-3 offset-1">
+      <label class="form-label">Quantidade:</label>
+    </div>
+    <div class="col-7">
+      <input type="number" id="quantidade" name="quantidade" class="form-control">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-3 offset-1">
+      <label class="form-label">Categoria:</label>
+    </div>
+    <div class="col-7">
+      <select name="categoria" id="categoria" class="form-select">
+        <option selected>Selecione uma categoria...</option>
+      </select>
+    </div>
+  </div>
+
+  <br>
+  <div class="row">
+    <div class="col-10 offset-1 border-bottom border-3">
+      <button class="col-12 btn cadastrar">Cadastrar</button>
+    </div>
+  </div>
+</form>
 </body>
 </html>

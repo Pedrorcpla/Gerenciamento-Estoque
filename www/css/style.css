@@ -72,4 +72,7 @@ form .row
   background: rgb(219, 219, 219);
   color: #2b9348;
 }
-
+#imagem
+{
+  width: 0;
+}
