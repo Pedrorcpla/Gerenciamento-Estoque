@@ -29,11 +29,11 @@
   background: #007f5f;
   color: white;
 }
-.modal
+.modalMenu
 {
   width: 75%;
 }
-.modal-content
+.modal-contentMenu
 {
   width: 75%;
 }
@@ -75,4 +75,16 @@ form .row
 #imagem
 {
   width: 0;
+}
+.tbUser
+{
+  font-size: 5px;
+}
+#usuNome
+{
+  color: #aacc00;
+}
+.fotoMenu
+{
+  width: 100vw;
 }

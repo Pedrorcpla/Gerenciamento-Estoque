@@ -16,38 +16,74 @@
 
 </head>
 <body>
+<div class="container-fluid">
   <header class="row text-white topo cor-verde">
     <div class="col-1 botao-menu">
-      <button class="btn cor-verde text-white"data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-bars"></i></button>
+      <button class="btn cor-verde text-white"data-bs-toggle="modal" data-bs-target="#menuModal"><i class="fas fa-bars"></i></button>
     </div>
     <div class="col-9" align="center">
       <h2>Controle de Estoque</h2>
     </div>
   </header>
 
-<!-- Menu Lateral -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header cor-verde text-white">
-        <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
-        <button type="button" class="btn-close btn-success" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a href="index.html"><i class="fas fa-home"></i> Menu</a></li>
-          <li class="list-group-item"><a href="usuario.html"><i class="fas fa-user"></i> Cadastrar Usuários</a></li>
-          <li class="list-group-item"><a href="produtos.html"><i class="fas fa-tags"></i> Cadastrar Produtos</a></li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <a href="config.html" class="list-group-item"><i class="fas fa-cog"></i> Configurações</a>
+  <!-- Menu Lateral -->
+  <div class="modal modalMenu fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content modal-contentMenu">
+        <div class="modal-header cor-verde text-white">
+          <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
+          <button type="button" class="btn-close btn-success" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="index.html"><i class="fas fa-home"></i> Menu</a></li>
+            <li class="list-group-item"><a href="usuario.html"><i class="fas fa-user"></i> Cadastrar Usuários</a></li>
+            <li class="list-group-item"><a href="produtos.html"><i class="fas fa-tags"></i> Cadastrar Produtos</a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="login.html" class="list-group-item"><i class="fas fa-sign-in-alt"></i> Login</a>         
+          <br>
+          <a href="config.html" class="list-group-item"><i class="fas fa-cog"></i> Configurações</a>
+        </div>
       </div>
     </div>
   </div>
+  <!-- Fim do Menu -->
+
+  <div class="row corpo">
+    <div class="col-10 offset-1 border-bottom border-3" align="center">
+      <h3 id="display">Seja Bem-Vindo(a) <span id="usuNome">NomeUsu</span></h3>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <img src = "https://image.freepik.com/fotos-gratis/robos-classificando-com-eficiencia-centenas-de-pacotes-por-hora-renderizacao-3d_41470-3516.jpg" alt="" class="img-responsive fotoMenu">
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-10 offset-1 border-bottom border-3" align="center">
+      <h3>Gerencie seu estoque</h3>
+    </div>
+  </div>
+  <table class="table tbGeral">
+    <thead>
+      <tr>
+        <th scope="col">ITEM</th>
+        <th scope="col">TOTAL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">Número de Usuários</td>
+        <td id="totalUsu">totalUsu</td>
+      </tr>
+      <tr>
+        <td scope="row">Número de Produtos</td>
+        <td id="totalProd">totalProd</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-<!-- Fim do Menu -->
-
-
 </body>
 </html>
