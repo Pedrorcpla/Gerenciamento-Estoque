@@ -21,10 +21,20 @@
 }
 .cor-verde
 {
-  background: #aacc00;
+  background-image: linear-gradient(to right, #80b918 , #d4d700);
+  color: white;
+}
+.cor-verde-botao
+{
+  background: #80b918;
   color: white;
 }
 .cor-verde-config
+{
+  background-image: linear-gradient(to right, #007f5f, #80b918);
+  color: white;
+}
+.cor-verde-config-botao
 {
   background: #007f5f;
   color: white;
@@ -37,11 +47,6 @@
 {
   width: 75%;
 }
-.list-group-item:hover
-{
-  
-  color: white;
-}
 a{
   text-decoration: none;
   color: black;
@@ -50,7 +55,7 @@ a:hover{
   color: white;
 }
 .list-group-item:hover{
-  background: #aacc00;
+  background-image: linear-gradient(to right, #80b918 , #d4d700);
   color: white;
 }
 form .row
@@ -63,7 +68,7 @@ form .row
 }
 .cadastrar
 {
-  background: #2b9348;
+  background-image: linear-gradient(to right, #007f5f, #80b918);
   color: white;
   margin-bottom: 10%;
 }
@@ -85,6 +90,10 @@ form .row
   color: #aacc00;
 }
 .fotoMenu
+{
+  width: 100vw;
+}
+.fotoUsu
 {
   width: 100vw;
 }
